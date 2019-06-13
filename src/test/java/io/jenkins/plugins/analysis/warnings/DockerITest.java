@@ -213,7 +213,7 @@ public class DockerITest extends IntegrationTestWithJenkinsPerTest {
     }
 
     /**
-     * Integrationstest Aufgabe 3. Build with makefile and GccContainer
+     * Integrationstest Aufgabe 3.    Build with makefile and GccContainer
      * @throws Exception
      */
     @Test
