@@ -230,7 +230,7 @@ public class DockerITest extends IntegrationTestWithJenkinsPerTest {
 
         project.getBuildersList().add(new Shell("make"));
         copySingleFileToAgentWorkspace(worker, project, "CHelloWorldMakeFileForDockerITest", "makefile");
-        copySingleFileToAgentWorkspace(worker, project, "CHelloWorldForDockerITest.c", "testClass.c");
+        copySingleFileToAgentWorkspace(worker, project, "CHelloWorldForDockerITest.c", "CHelloWorldForDockerITest.c");
         enableWarnings(project, createTool(new Gcc3(), ""));
 
         scheduleSuccessfulBuild(project);

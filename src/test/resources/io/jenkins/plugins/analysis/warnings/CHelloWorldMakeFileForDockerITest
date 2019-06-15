@@ -1,9 +1,5 @@
-CC=gcc
-CFLAGS=-I.
-OBJ = testClass.o
+CHelloWorldForDockerITest: CHelloWorldForDockerITest.o
+	gcc -o CHelloWorldForDockerITest CHelloWorldForDockerITest.o
 
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-testClass: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
+CHelloWorldForDockerITest.o: CHelloWorldForDockerITest.c
+	gcc -c CHelloWorldForDockerITest.c
